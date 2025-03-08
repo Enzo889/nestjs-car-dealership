@@ -72,4 +72,8 @@ export class CarsService {
 
     this.carsList = this.carsList.filter((car) => car.id !== id);
   }
+
+  fillCarsSeedData(cars: Car[]) {
+    this.carsList = cars;
+  }
 }
